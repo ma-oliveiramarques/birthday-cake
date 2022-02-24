@@ -2,6 +2,13 @@ body {
   background-color: #333;
 }
 
+h1 {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: gold;
+text-align: center;
+padding-top: 40px;
+}
+
 .cake {
   position: absolute;
   width: 250px;
@@ -145,6 +152,17 @@ body {
           transform-origin: 50% 90%;
   -webkit-animation: flicker 1s ease-in-out alternate infinite;
           animation: flicker 1s ease-in-out alternate infinite;
+}
+
+.button { 
+  border-radius: 30px;
+  color: white;
+  padding: 15px;
+  background-color: goldenrod;
+  cursor: pointer;
+  position: absolute;
+  left: 45%;
+  top: 80%;  
 }
 
 @-webkit-keyframes flicker {
