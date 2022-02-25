@@ -145,7 +145,7 @@ p {
   border-radius: 50%;
   background-color: #ad030f;
 }
-
+/*Tentativa de adicionar uma animação à flame, neste caso apagar*/
 .flame {
   position: absolute;
   background-color: orange;
@@ -163,7 +163,12 @@ p {
   -webkit-animation: flicker 1s ease-in-out alternate infinite;
           animation: flicker 1s ease-in-out alternate infinite;
 }
+@-webkit-keyframes blowflame{
+  0% {background-color: orange; width: 15px; height: 35px;}
+  100% {background-color: #333; width: 0px; height: 0px;}
+}
 
+/*tentativa de apagar a vela com a função hover*/
 .flame:hover {
   width: 0px;
   height: 0px;
@@ -172,6 +177,7 @@ p {
   cursor: progress;
 }
 
+/*configuração do botao blow me*/
 .blowcandle { 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 30px;
@@ -183,12 +189,13 @@ p {
   left: 45%;
   top: 80%;  
 }
+
 .blowcandle:hover{
   background-color: darkorange;
   color: black;
   transition-duration: 1.5s;
 }
-
+/*Keyframes pedro*/
 @-webkit-keyframes flicker {
   0% {
     -webkit-transform: skewX(5deg);
