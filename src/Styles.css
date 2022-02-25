@@ -162,7 +162,10 @@ p {
           transform-origin: 50% 90%;
   -webkit-animation: flicker 1s ease-in-out alternate infinite;
           animation: flicker 1s ease-in-out alternate infinite;
+  -webkit-animation: blowflame 4s 2s ease-out backwards infinite;
 }
+/*Tentativa de adicionar uma animação à flame, neste caso apagar,
+o problema é que invalida a tua keyframe*/
 @-webkit-keyframes blowflame{
   0% {background-color: orange; width: 15px; height: 35px;}
   100% {background-color: #333; width: 0px; height: 0px;}
