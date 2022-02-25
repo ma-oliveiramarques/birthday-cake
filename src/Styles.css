@@ -1,22 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+
 body {
-  background-color: #333;
+  background-color: #1e1934;
+  -webkit-box-flex: box;
+      -ms-flex: box;
+          flex: box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 h1 {
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-color: gold;
-text-align: center;
-padding-top: 40px;
-}
-
-p {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: small;
+  margin: 0 auto;
   text-align: center;
-  color: beige;
-  position: absolute;
-  top: 90%;
-  left: 20%;
+  font-size: 8em;
+  font-weight: 100;
+  font-family: 'Sacramento';
+  letter-spacing: .1em;
+  text-shadow: 0 0 20px black;
+  margin-top: 80px;
+  opacity: .8;
+  color: pink;
 }
 
 .cake {
@@ -25,7 +31,7 @@ p {
   height: 200px;
   top: 50%;
   left: 50%;
-  margin-top: -70px;
+  margin-top: 50px;
   margin-left: -125px;
 }
 
@@ -145,7 +151,7 @@ p {
   border-radius: 50%;
   background-color: #ad030f;
 }
-/*Tentativa de adicionar uma animação à flame, neste caso apagar*/
+
 .flame {
   position: absolute;
   background-color: orange;
@@ -160,45 +166,10 @@ p {
           box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   -webkit-transform-origin: 50% 90%;
           transform-origin: 50% 90%;
-  -webkit-animation: flicker 1s ease-in-out alternate infinite;
-          animation: flicker 1s ease-in-out alternate infinite;
-  -webkit-animation: blowflame 4s 2s ease-out backwards infinite;
-}
-/*Tentativa de adicionar uma animação à flame, neste caso apagar,
-o problema é que invalida a tua keyframe*/
-@-webkit-keyframes blowflame{
-  0% {background-color: orange; width: 15px; height: 35px;}
-  100% {background-color: #333; width: 0px; height: 0px;}
+  -webkit-animation: flicker 1.5s ease-in-out alternate infinite;
+          animation: flicker 1.5s ease-in-out alternate infinite;
 }
 
-/*tentativa de apagar a vela com a função hover*/
-.flame:hover {
-  width: 0px;
-  height: 0px;
-  transition-property:all;
-  transition-duration: 5s;
-  cursor: progress;
-}
-
-/*configuração do botao blow me*/
-.blowcandle { 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border-radius: 30px;
-  color: white;
-  padding: 15px;
-  background-color: goldenrod;
-  cursor: pointer;
-  position: absolute;
-  left: 45%;
-  top: 80%;  
-}
-
-.blowcandle:hover{
-  background-color: darkorange;
-  color: black;
-  transition-duration: 1.5s;
-}
-/*Keyframes pedro*/
 @-webkit-keyframes flicker {
   0% {
     -webkit-transform: skewX(5deg);
@@ -263,5 +234,31 @@ o problema é que invalida a tua keyframe*/
     -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
             box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   }
+}
+
+@-webkit-keyframes puff {
+  100% {
+    -webkit-transform: rotateY(-30deg);
+            transform: rotateY(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes puff {
+  100% {
+    -webkit-transform: rotateY(-30deg);
+            transform: rotateY(-30deg);
+    opacity: 0;
+  }
+}
+
+.puff {
+  -webkit-animation: puff .3s ease-in-out forwards;
+          animation: puff .3s ease-in-out forwards;
+}
+
+.puff-bubble {
+  -webkit-animation: puff-bubble .75s ease-in-out forwards;
+          animation: puff-bubble .75s ease-in-out forwards;
 }
 /*# sourceMappingURL=Styles.css.map */
