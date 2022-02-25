@@ -1,5 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
+
 body {
-  background-color: #333;
+  background-color: #1e1934;
+  -webkit-box-flex: box;
+      -ms-flex: box;
+          flex: box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 8em;
+  font-weight: 100;
+  font-family: 'Sacramento';
+  letter-spacing: .1em;
+  text-shadow: 0 0 20px black;
+  margin-top: 80px;
+  opacity: .8;
+  color: pink;
 }
 
 .cake {
@@ -8,7 +31,7 @@ body {
   height: 200px;
   top: 50%;
   left: 50%;
-  margin-top: -70px;
+  margin-top: 50px;
   margin-left: -125px;
 }
 
@@ -143,8 +166,8 @@ body {
           box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   -webkit-transform-origin: 50% 90%;
           transform-origin: 50% 90%;
-  -webkit-animation: flicker 1s ease-in-out alternate infinite;
-          animation: flicker 1s ease-in-out alternate infinite;
+  -webkit-animation: flicker 1.5s ease-in-out alternate infinite;
+          animation: flicker 1.5s ease-in-out alternate infinite;
 }
 
 @-webkit-keyframes flicker {
@@ -211,5 +234,31 @@ body {
     -webkit-box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
             box-shadow: 0 0 10px rgba(255, 165, 0, 0.5), 0 0 20px rgba(255, 165, 0, 0.5), 0 0 60px rgba(255, 165, 0, 0.5), 0 0 80px rgba(255, 165, 0, 0.5);
   }
+}
+
+@-webkit-keyframes puff {
+  100% {
+    -webkit-transform: rotateY(-30deg);
+            transform: rotateY(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes puff {
+  100% {
+    -webkit-transform: rotateY(-30deg);
+            transform: rotateY(-30deg);
+    opacity: 0;
+  }
+}
+
+.puff {
+  -webkit-animation: puff .3s ease-in-out forwards;
+          animation: puff .3s ease-in-out forwards;
+}
+
+.puff-bubble {
+  -webkit-animation: puff-bubble .75s ease-in-out forwards;
+          animation: puff-bubble .75s ease-in-out forwards;
 }
 /*# sourceMappingURL=Styles.css.map */
