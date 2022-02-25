@@ -1,4 +1,4 @@
-# Birthday-cake
+# Birthday cake
 This is a Project to create a nice birthday card to my friend Cristy on her birthday.
 
 # Introduction
