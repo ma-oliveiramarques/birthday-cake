@@ -3,7 +3,7 @@ This is a Project to create a nice birthday card to my friend Cristy on her birt
 
 # Introduction
 
-This repository aims to create `.html` and `.css` files so that Mariana and Pedro can create a nice birthday card gift to their friend.
+This repository aims to create `.html`, `.css` and `.js` files so that Mariana and Pedro can create a nice birthday card gift to their friend.
 
 # Technologies
 
@@ -31,7 +31,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd Birthday-cake
+  cd birthday-cake
 ```
 
 Open in Visual Studio Code
