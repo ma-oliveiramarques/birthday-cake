@@ -10,6 +10,7 @@ This repository aims to create `.html` and `.css` files so that Mariana and Pedr
 - [Markdown](https://www.markdownguide.org/basic-syntax/)
 - [HTML](https://www.w3schools.com/html/html_basic.asp)
 - [CSS](https://www.w3schools.com/css/default.asp)
+- [Javascript](https://www.javascript.com)
 
 # Setup
 
