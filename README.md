@@ -24,7 +24,7 @@ Create and go to the directory where you want to place the repository
 Clone the project
 
 ```bash
-  git clone https://github.com/ma-oliveiramarques/Birthday-cake
+  git clone https://github.com/ma-oliveiramarques/birthday-cake
 
 ```
 
